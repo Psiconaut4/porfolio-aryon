@@ -43,7 +43,8 @@ section {
 #about {
     background-color: #FFFFFF;
     color:#4F4F4F;
-    font-weight: bolder; /* Fundo da seção Sobre */
+    font-weight: bolder;
+    text-align: center; /* Fundo da seção Sobre */
 }
 
 #works {
