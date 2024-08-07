@@ -1,0 +1,148 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8A8D8F; /* Background principal */
+}
+
+header {
+    background-color: #4F4F4F; /* Cabeçalho */
+    color: #FFFFFF; /* Texto do cabeçalho */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Links de navegação */
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    color: #FFFFFF; /* Texto das seções */
+}
+
+#about {
+    background-color: #4F4F4F; /* Fundo da seção Sobre */
+}
+
+#works {
+    background-color: #8A8D8F; /* Fundo da seção Trabalhos */
+}
+
+#contact {
+    background-color: #4F4F4F; /* Fundo da seção Contato */
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #A61417; /* Linha da timeline */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #A61417; /* Bolas da timeline */
+    border: 4px solid #FFFFFF;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #A61417; /* Setas da timeline */
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #A61417;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #A61417; /* Setas da timeline */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #A61417 transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: #FFFFFF; /* Fundo do conteúdo */
+    color: #4F4F4F; /* Texto do conteúdo */
+    position: relative;
+    border-radius: 6px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #4F4F4F; /* Fundo do rodapé */
+    color: #FFFFFF; /* Texto do rodapé */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
