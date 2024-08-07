@@ -163,7 +163,7 @@ img {
 footer {
     background-color: #4F4F4F; /* Fundo do rodapé */
     color: #FFFFFF; /* Texto do rodapé */
-    text-align: center;
+    text-align: left;
     padding: 5px 0;
     position: fixed;
     width: 100%;
