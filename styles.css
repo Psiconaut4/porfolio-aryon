@@ -54,20 +54,6 @@ section {
     background-color: #4F4F4F;
     padding-bottom: 100px; /* Fundo da seção Contato */
 }
-img#instagram{
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
-    box-sizing: border-box;
-    display: inline;
-}
-img#instagram:hover{
-    border:2px solid rgba(255, 255, 255, 0.63);
-    transform: translate(-3px, -5px);
-    box-shadow: 5px 5px 10px black;
-    transition: transform 0.5s, border .2s;
-}
 
 .timeline {
     position: relative;
@@ -159,10 +145,27 @@ img {
     margin: 10px 0;
 }
 
+img#instagram{
+    width: 35px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+    box-sizing: border-box;
+    display: inline;
+}
+img#instagram:hover{
+    border:2px solid rgba(255, 255, 255, 0.63);
+    transform: translate(-3px, -5px);
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.5s, border .2s;
+}
+div#logo{
+    text-align: right;
+}
+
 footer {
     background-color: #4F4F4F; /* Fundo do rodapé */
     color: #FFFFFF; /* Texto do rodapé */
-    text-align: left;
     padding: 5px 0;
     position: fixed;
     width: 100%;
