@@ -140,19 +140,24 @@ img {
     margin: 10px 0;
 }
 
-img#instagram{
+section#redes-sociais{
+    text-align: right;
+}
+section#redes-sociais img{
+    display: inline;
     width: 35px;
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
     box-sizing: border-box;
 }
-img#instagram:hover{
+section#redes-sociais img:hover{
     border:2px solid rgba(255, 255, 255, 0.63);
     transform: translate(-3px, -5px);
     box-shadow: 5px 5px 10px black;
     transition: transform 0.5s, border .2s;
 }
+
 footer {
     background-color: #686767; /* Fundo do rodapé */
     color: #FFFFFF; /* Texto do rodapé */
