@@ -50,11 +50,6 @@ section {
     background-color: #8A8D8F; /* Fundo da seção Trabalhos */
 }
 
-#contact {
-    background-color: #4F4F4F;
-    padding-bottom: 100px; /* Fundo da seção Contato */
-}
-
 .timeline {
     position: relative;
     max-width: 1200px;
