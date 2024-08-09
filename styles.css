@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #8A8D8F; /* Background principal */
+    width: 100vw;
 }
 
 header {
@@ -19,6 +20,7 @@ header {
     color: #FFFFFF; /* Texto do cabeçalho */
     padding: 20px;
     text-align: center;
+    
 }
 
 nav ul {
@@ -164,7 +166,6 @@ footer {
     background-color: #686767; /* Fundo do rodapé */
     color: #FFFFFF; /* Texto do rodapé */
     padding: 5px;
-    width: 100%;
     bottom: 0;
     margin: 0;
     display: flex;
