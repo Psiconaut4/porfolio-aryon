@@ -102,7 +102,7 @@ section {
     margin-top: 0; /* Remove a margem superior da primeira aba */
 }
 .container:nth-child(2){
-    margin-top: -100%;
+    margin-top: -90%;
 }
 .container:last-child{
     margin-top: 0%;
@@ -122,7 +122,7 @@ section {
 
 .left {
     left: 4%;
-    margin-top: -40%;
+    margin-top: -10%;
 }
 
 .right {
