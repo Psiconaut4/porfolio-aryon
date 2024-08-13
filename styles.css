@@ -1,9 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Sriracha&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 400;
@@ -46,7 +48,7 @@ section {
 
 #about {
     background-color: #ffffffb9;
-    color:#4F4F4F;
+    color: #4F4F4F;
     font-weight: bolder;
     text-align: center;
     padding: 50px; /* Fundo da seção Sobre */
@@ -73,12 +75,10 @@ section {
     background-size: var(--s) calc(var(--s) * 0.577);
 }
 
-
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 .timeline::after {
@@ -98,15 +98,19 @@ section {
     background-color: inherit;
     width: 40%;
 }
+
 .container:first-child {
     margin-top: 0; /* Remove a margem superior da primeira aba */
 }
-.container:nth-child(2){
+
+.container:nth-child(2) {
     margin-top: -90%;
 }
-.container:last-child{
+
+.container:last-child {
     margin-top: -20%;
 }
+
 .container::after {
     content: '';
     position: absolute;
@@ -160,13 +164,31 @@ section {
     left: -16px;
 }
 
-.content {
+/* Estilos para .content-image */
+.content-image {
     padding: 10px;
     background-color: #FFFFFF; /* Fundo do conteúdo */
     color: #4F4F4F; /* Texto do conteúdo */
     position: relative;
     border-radius: 6px;
     text-align: center;
+    overflow: hidden;
+}
+
+.content-image img {
+    transition: transform 0.5s ease, transform-origin 0.5s ease;
+    cursor: zoom-in;
+    width: 100%;
+    height: auto;
+}
+
+.content-image:hover img {
+    transform: scale(1.5); /* Ajuste o valor para aumentar ou diminuir o zoom */
+}
+
+/* Seletor para o ajuste de origem do zoom */
+.content-image img.zoom {
+    transform-origin: center; /* Inicialmente centralizado */
 }
 
 img {
@@ -177,10 +199,11 @@ img {
     width: 300px;
 }
 
-section#redes-sociais{
+section#redes-sociais {
     text-align: right;
 }
-section#redes-sociais img{
+
+section#redes-sociais img {
     display: inline;
     width: 35px;
     margin: 10px;
@@ -188,8 +211,9 @@ section#redes-sociais img{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
     box-sizing: border-box;
 }
-section#redes-sociais img:hover{
-    border:2px solid rgba(255, 255, 255, 0.63);
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.63);
     transform: translate(-3px, -5px);
     box-shadow: 5px 5px 10px black;
     transition: transform 0.5s, border .2s;

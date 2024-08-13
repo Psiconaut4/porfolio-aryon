@@ -29,35 +29,35 @@
         <h2>Projetos</h2>
         <div class="timeline">
             <div class="container left">
-                <div class="content">
+                <div class="content-image">
                     <h3> SC WELD</h3>
                     <p>Desenvolvimento Material Impresso</p>
-                    <img width="300px" src="imagens/scweld3.jpeg" alt="Trabalho 1">
-                    <img width="300px" src="imagens/scweld1.jpeg" alt="">
-                    <img width="300px" src="imagens/scweld2.jpeg" alt="">
+                    <img width="300px" src="imagens/scweld3.jpeg" alt="Trabalho 1" class="zoom">
+                    <img width="300px" src="imagens/scweld1.jpeg" alt="" class="zoom">
+                    <img width="300px" src="imagens/scweld2.jpeg" alt="" class="zoom">
                 </div>
             </div>
             <div class="container right">
-                <div class="content">
+                <div class="content-image">
                     <h3>YUSH</h3>
                     <p>Desenvolvimento Estampa | BTRFLY WRLD</p>
-                    <img src="imagens/yush.jpeg" alt="Trabalho 2">
+                    <img src="imagens/yush.jpeg" alt="Trabalho 2" class="zoom">
                 </div>
             </div>
             <div class="container left">
-                <div class="content">
+                <div class="content-image">
                     <h3>9TY FIVE</h3>
                     <p>Desenvolvimento de Marca</p>
-                    <img src="imagens/9five.jpeg" alt="">
-                    <img src="imagens/9five2.jpeg" alt="">
-                    <img src="imagens/9five3.jpeg" alt="">
+                    <img src="imagens/9five.jpeg" alt="" class="zoom">
+                    <img src="imagens/9five2.jpeg" alt="" class="zoom">
+                    <img src="imagens/9five3.jpeg" alt="" class="zoom">
                 </div>
             </div>
             <div class="container right">
-                <div class="content">
+                <div class="content-image">
                     <h3>LAPUA</h3>
                     <p>Desenvolvimento de Logo</p>
-                    <img src="imagens/lapua.jpeg" alt="">
+                    <img src="imagens/lapua.jpeg" alt="" class="zoom">
                 </div>
             </div>
             <!-- Adicione mais trabalhos conforme necessário -->
@@ -74,5 +74,18 @@
             <a href="mailto:airthonpichela@gmail.com?subject=Orçamento&body=Ol%C3%A1%2C%20tenho%20interesse%20em%20fazer%20um%20or%C3%A7amento! " target="_blank"><img src="imagens/logo-email.jpeg" alt="email"></a>
         </section>
     </footer>
+    <script>
+        document.querySelectorAll('.content-image').forEach(container => {
+    container.addEventListener('mousemove', function(e) {
+        const zoomImg = container.querySelector('img');
+        const containerRect = container.getBoundingClientRect();
+        const x = e.clientX - containerRect.left;
+        const y = e.clientY - containerRect.top;
+
+        zoomImg.style.transformOrigin = `${x}px ${y}px`;
+    });
+});
+
+    </script>
 </body>
 </html>
