@@ -16,11 +16,11 @@ body {
 }
 
 header {
-    background-color: #4F4F4F; /* Cabeçalho */
+    background-image: url(imagens/header.jpg);
     color: #FFFFFF; /* Texto do cabeçalho */
     padding: 20px;
     text-align: center;
-    
+    text-shadow: 2px 2px 2px black;
 }
 
 nav ul {
@@ -31,6 +31,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 10px;
+    text-shadow: 2px 2px 2px black;
 }
 
 nav ul li a {
@@ -77,6 +78,7 @@ section {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .timeline::after {
@@ -96,7 +98,15 @@ section {
     background-color: inherit;
     width: 40%;
 }
-
+.container:first-child {
+    margin-top: 0; /* Remove a margem superior da primeira aba */
+}
+.container:nth-child(2){
+    margin-top: -100%;
+}
+.container:last-child{
+    margin-top: 0%;
+}
 .container::after {
     content: '';
     position: absolute;
@@ -112,10 +122,12 @@ section {
 
 .left {
     left: 4%;
+    margin-top: -40%;
 }
 
 .right {
     left: 50%;
+    margin-top: -30%;
 }
 
 .left::before {
