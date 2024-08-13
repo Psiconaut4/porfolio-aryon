@@ -161,7 +161,7 @@ section {
 }
 
 .content {
-    padding: 10px 10px;
+    padding: 10px;
     background-color: #FFFFFF; /* Fundo do conteúdo */
     color: #4F4F4F; /* Texto do conteúdo */
     position: relative;
