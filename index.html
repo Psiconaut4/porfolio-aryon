@@ -74,18 +74,6 @@
             <a href="mailto:airthonpichela@gmail.com?subject=Orçamento&body=Ol%C3%A1%2C%20tenho%20interesse%20em%20fazer%20um%20or%C3%A7amento! " target="_blank"><img src="imagens/logo-email.jpeg" alt="email"></a>
         </section>
     </footer>
-    <script>
-        document.querySelectorAll('.content-image').forEach(container => {
-    container.addEventListener('mousemove', function(e) {
-        const zoomImg = container.querySelector('img');
-        const containerRect = container.getBoundingClientRect();
-        const x = e.clientX - containerRect.left;
-        const y = e.clientY - containerRect.top;
-
-        zoomImg.style.transformOrigin = `${x}px ${y}px`;
-    });
-});
-
-    </script>
+    
 </body>
 </html>

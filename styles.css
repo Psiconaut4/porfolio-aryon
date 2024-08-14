@@ -175,22 +175,6 @@ section {
     overflow: hidden;
 }
 
-.content-image img {
-    transition: transform 0.5s ease, transform-origin 0.5s ease;
-    cursor: zoom-in;
-    width: 100%;
-    height: auto;
-}
-
-.content-image:hover img {
-    transform: scale(1.5); /* Ajuste o valor para aumentar ou diminuir o zoom */
-}
-
-/* Seletor para o ajuste de origem do zoom */
-.content-image img.zoom {
-    transform-origin: center; /* Inicialmente centralizado */
-}
-
 img {
     max-width: 100%;
     height: auto;
